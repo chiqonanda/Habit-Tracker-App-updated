@@ -84,11 +84,11 @@ Aplikasi ini menggunakan Supabase sebagai backend untuk:
 
 Aplikasi menyediakan fitur autentikasi pengguna menggunakan Supabase Authentication sehingga setiap pengguna hanya dapat melihat dan mengelola data kebiasaan miliknya sendiri.
 
-#### Login
+### Login
 
 <img width="528" height="1069" alt="image" src="https://github.com/user-attachments/assets/36bdf8fc-fb06-4f0a-a708-ee37f3bd7f54" />
 
-#### Registrasi
+### Registrasi
 
 <img width="528" height="1069" alt="image" src="https://github.com/user-attachments/assets/4e5a4bd0-64ba-4d64-a424-6ec5611a2232" />
 
