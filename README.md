@@ -188,7 +188,7 @@ Widget-widget tersebut digunakan untuk membangun layout aplikasi, menampilkan da
 
 ---
 
-Cara Menjalankan Aplikasi
+## Cara Menjalankan Aplikasi
 
 - Clone repository dari GitHub
 
