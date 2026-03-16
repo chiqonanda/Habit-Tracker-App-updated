@@ -1,7 +1,8 @@
-# Minpro Task 1
-# Chiqo Nanda Rial Pratama | 2409116046
-
+# Author : Chiqo Nanda Rial Pratama
+# Mini Project 2 - Flutter Mobile Programming
 # 📱 Daily Habit Tracker
+
+---
 
 ## Deskripsi Aplikasi
 
@@ -207,9 +208,7 @@ Cara Menjalankan Aplikasi
 
 ---
 
-## Author : Chiqo Nanda Rial Pratama
-## Mini Project 2 - Flutter Mobile Programming
-## Habit Tracker App
+
 
 
 
