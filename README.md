@@ -49,31 +49,37 @@ Add Habit Page → halaman untuk menambahkan kebiasaan baru
 
 Edit Habit Page → halaman untuk mengedit atau menghapus kebiasaan
 
-Struktur Data
+---
+
+## Struktur Data
 
 Setiap data kebiasaan memiliki minimal 3 field input, yaitu:
 
-Title (Nama Kebiasaan)
+- Title (Nama Kebiasaan)
 
-Description (Deskripsi Kebiasaan)
+- Description (Deskripsi Kebiasaan)
 
-Category (Kategori Kebiasaan)
+- Category (Kategori Kebiasaan)
 
-Status Completed (Status selesai atau belum)
+- Status Completed (Status selesai atau belum)
 
-Integrasi Supabase
+- Integrasi Supabase
+
+---
 
 Aplikasi ini menggunakan Supabase sebagai backend untuk:
 
-Database PostgreSQL
+- Database PostgreSQL
 
-Authentication (Login & Register)
+- Authentication (Login & Register)
 
-Penyimpanan data kebiasaan
+- Penyimpanan data kebiasaan
 
-Seluruh data kebiasaan disimpan dalam tabel habits di database Supabase.
+- Seluruh data kebiasaan disimpan dalam tabel habits di database Supabase.
 
-Nilai Tambah yang Diimplementasikan
+---
+
+## Nilai Tambah yang Diimplementasikan
 1. Login dan Register (Supabase Auth)
 
 Aplikasi menyediakan fitur autentikasi pengguna menggunakan Supabase Authentication sehingga setiap pengguna hanya dapat melihat dan mengelola data kebiasaan miliknya sendiri.
@@ -90,59 +96,64 @@ Contoh isi file .env:
 
 SUPABASE_URL=your_supabase_url
 SUPABASE_ANON_KEY=your_supabase_anon_key
-Widget yang Digunakan
 
-Aplikasi ini menggunakan berbagai widget Flutter untuk membangun antarmuka pengguna, diantaranya:
+---
 
-MaterialApp
+## Widget yang Digunakan
 
-Scaffold
+### Aplikasi ini menggunakan berbagai widget Flutter untuk membangun antarmuka pengguna, diantaranya:
 
-AppBar
+- MaterialApp
 
-ListView.builder
+- Scaffold
 
-Card
+- AppBar
 
-Container
+- ListView.builder
 
-Text
+- Card
 
-TextField
+- Container
 
-ElevatedButton
+- Text
 
-FloatingActionButton
+- TextField
 
-Checkbox
+- ElevatedButton
 
-IconButton
+- FloatingActionButton
 
-Wrap
+- Checkbox
 
-GestureDetector
+- IconButton
 
-Navigator
+- Wrap
 
-LinearProgressIndicator
+- GestureDetector
 
-SingleChildScrollView
+- Navigator
+
+- LinearProgressIndicator
+
+- SingleChildScrollView
 
 Widget-widget tersebut digunakan untuk membangun layout aplikasi, menampilkan data kebiasaan, membuat form input, serta mengatur navigasi antar halaman.
 
-Teknologi yang Digunakan
+### Teknologi yang Digunakan
 
-Flutter
+- Flutter
 
-Dart
+- Dart
 
-Supabase
+- Supabase
 
-Provider (State Management)
+- Provider (State Management)
 
-Flutter Dotenv
+- Flutter Dotenv
 
-Struktur Project
+---
+
+## Struktur Project
 lib
 │
 ├── models
@@ -167,27 +178,32 @@ lib
 │     theme_provider.dart
 │
 └── main.dart
+
+---
+
 Cara Menjalankan Aplikasi
 
-Clone repository dari GitHub
+- Clone repository dari GitHub
 
-git clone https://github.com/username/repository-name.git
+- git clone https://github.com/username/repository-name.git
 
-Masuk ke folder project
+- Masuk ke folder project
 
-cd project-name
+- cd project-name
 
-Install dependencies
+- Install dependencies
 
-flutter pub get
+- flutter pub get
 
-Jalankan aplikasi
+- Jalankan aplikasi
 
-flutter run
-Author
+- flutter run
 
-Mini Project 2 - Flutter Mobile Programming
-Habit Tracker App
+---
+
+## Author : Chiqo Nanda Rial Pratama
+## Mini Project 2 - Flutter Mobile Programming
+## Habit Tracker App
 
 
 <img width="528" height="1069" alt="image" src="https://github.com/user-attachments/assets/36bdf8fc-fb06-4f0a-a708-ee37f3bd7f54" />
