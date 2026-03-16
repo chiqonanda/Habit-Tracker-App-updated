@@ -84,6 +84,15 @@ Aplikasi ini menggunakan Supabase sebagai backend untuk:
 
 Aplikasi menyediakan fitur autentikasi pengguna menggunakan Supabase Authentication sehingga setiap pengguna hanya dapat melihat dan mengelola data kebiasaan miliknya sendiri.
 
+#### Registrasi
+
+<img width="528" height="1069" alt="image" src="https://github.com/user-attachments/assets/36bdf8fc-fb06-4f0a-a708-ee37f3bd7f54" />
+
+#### Login
+
+<img width="528" height="1069" alt="image" src="https://github.com/user-attachments/assets/4e5a4bd0-64ba-4d64-a424-6ec5611a2232" />
+
+
 2. Light Mode dan Dark Mode
 
 Aplikasi mendukung mode terang dan mode gelap yang dapat diubah langsung dari halaman utama menggunakan tombol toggle.
@@ -154,30 +163,8 @@ Widget-widget tersebut digunakan untuk membangun layout aplikasi, menampilkan da
 ---
 
 ## Struktur Project
-lib
-│
-├── models
-│     habit_model.dart
-│
-├── pages
-│     login_page.dart
-│     register_page.dart
-│     home_page.dart
-│     add_habit_page.dart
-│     edit_habit_page.dart
-│
-├── widgets
-│     habit_card.dart
-│     progress_section.dart
-│
-├── services
-│     habit_service.dart
-│     auth_service.dart
-│
-├── provider
-│     theme_provider.dart
-│
-└── main.dart
+
+<img width="360" height="550" alt="image" src="https://github.com/user-attachments/assets/3f65df57-bcea-4ec9-b3e1-0e4f83be8f8c" />
 
 ---
 
@@ -205,11 +192,6 @@ Cara Menjalankan Aplikasi
 ## Mini Project 2 - Flutter Mobile Programming
 ## Habit Tracker App
 
-
-<img width="528" height="1069" alt="image" src="https://github.com/user-attachments/assets/36bdf8fc-fb06-4f0a-a708-ee37f3bd7f54" />
-
-
-<img width="528" height="1069" alt="image" src="https://github.com/user-attachments/assets/4e5a4bd0-64ba-4d64-a424-6ec5611a2232" />
 
 
 <img width="528" height="1069" alt="image" src="https://github.com/user-attachments/assets/e36f506c-cfb2-46c9-ac6f-75265fc54a4c" />
