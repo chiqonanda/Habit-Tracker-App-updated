@@ -84,11 +84,11 @@ Aplikasi ini menggunakan Supabase sebagai backend untuk:
 
 Aplikasi menyediakan fitur autentikasi pengguna menggunakan Supabase Authentication sehingga setiap pengguna hanya dapat melihat dan mengelola data kebiasaan miliknya sendiri.
 
-#### Registrasi
+#### Login
 
 <img width="528" height="1069" alt="image" src="https://github.com/user-attachments/assets/36bdf8fc-fb06-4f0a-a708-ee37f3bd7f54" />
 
-#### Login
+#### Registrasi
 
 <img width="528" height="1069" alt="image" src="https://github.com/user-attachments/assets/4e5a4bd0-64ba-4d64-a424-6ec5611a2232" />
 
@@ -97,14 +97,33 @@ Aplikasi menyediakan fitur autentikasi pengguna menggunakan Supabase Authenticat
 
 Aplikasi mendukung mode terang dan mode gelap yang dapat diubah langsung dari halaman utama menggunakan tombol toggle.
 
+### LightMode
+
+<img width="528" height="1069" alt="image" src="https://github.com/user-attachments/assets/e36f506c-cfb2-46c9-ac6f-75265fc54a4c" />
+
+### Nightmode
+
+<img width="528" height="1069" alt="image" src="https://github.com/user-attachments/assets/2d3b5c8c-b145-4352-9804-c133c6603093" />
+
+
 3. Penggunaan File .env
 
 Untuk menjaga keamanan konfigurasi, Supabase URL dan API Key disimpan di dalam file .env sehingga tidak ditampilkan secara langsung di dalam source code.
 
+
+### File .Env
+<img width="1069" height="126" alt="image" src="https://github.com/user-attachments/assets/33b53308-2f49-41ce-ab6d-351d5558bf67" />
+
+### Output 
+
+<img width="730" height="159" alt="image" src="https://github.com/user-attachments/assets/fcb59566-dbca-428b-9ce1-51139869e5ff" />
+
+
+
 Contoh isi file .env:
 
-SUPABASE_URL=your_supabase_url
-SUPABASE_ANON_KEY=your_supabase_anon_key
+SUPABASE_URL=https://jstcthqrpepyeamjkbid.supabase.co
+SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpzdGN0aHFycGVweWVhbWprYmlkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM2NDkxNDAsImV4cCI6MjA4OTIyNTE0MH0.TisvdWMrbQHFIvnsWsDPVVkWvENPeXTveHqLb6fSLxk
 
 ---
 
@@ -194,10 +213,7 @@ Cara Menjalankan Aplikasi
 
 
 
-<img width="528" height="1069" alt="image" src="https://github.com/user-attachments/assets/e36f506c-cfb2-46c9-ac6f-75265fc54a4c" />
 
-
-<img width="528" height="1069" alt="image" src="https://github.com/user-attachments/assets/9a618efc-113e-443b-9bdd-8a9ee7c8c0f1" />
 
 
 
