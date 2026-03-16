@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../models/habit_model.dart';
+import '../services/habit_service.dart';
+import '../services/auth_service.dart';
 
 class AddHabitPage extends StatefulWidget {
   const AddHabitPage({super.key});
@@ -11,6 +12,8 @@ class AddHabitPage extends StatefulWidget {
 class _AddHabitPageState extends State<AddHabitPage> {
   final titleController = TextEditingController();
   final descController = TextEditingController();
+  final HabitService habitService = HabitService();
+  final AuthService authService = AuthService();
 
   String selectedCategory = "Kesehatan";
 
@@ -166,21 +169,26 @@ class _AddHabitPageState extends State<AddHabitPage> {
                         BorderRadius.circular(30),
                   ),
                 ),
-                onPressed: () {
-                  if (titleController.text.isEmpty ||
-                      descController.text.isEmpty) {
-                    return;
-                  }
+                onPressed: () async {
+                    if (titleController.text.isEmpty ||
+                        descController.text.isEmpty) {
+                      return;
+                    }
 
-                  Navigator.pop(
-                    context,
-                    Habit(
-                      title: titleController.text,
-                      description: descController.text,
-                      category: selectedCategory,
-                    ),
-                  );
-                },
+                    final userId = authService.getCurrentUserId();
+
+                    if (userId == null) return;
+
+                    await habitService.addHabit({
+                      'user_id': userId,
+                      'title': titleController.text,
+                      'description': descController.text,
+                      'category': selectedCategory,
+                      'is_completed': false,
+                    });
+
+                    Navigator.pop(context, true);
+                  },
                 child: const Text(
                   "Simpan Kebiasaan",
                   style: TextStyle(

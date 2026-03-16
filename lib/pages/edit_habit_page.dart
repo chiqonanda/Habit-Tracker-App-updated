@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/habit_model.dart';
+import '../services/habit_service.dart';
 
 class EditHabitPage extends StatefulWidget {
   final Habit habit;
@@ -22,6 +23,8 @@ class _EditHabitPageState extends State<EditHabitPage> {
     "Mindfulness",
     "Productivity"
   ];
+
+  final HabitService habitService = HabitService();
 
   @override
   void initState() {
@@ -52,8 +55,9 @@ class _EditHabitPageState extends State<EditHabitPage> {
         actions: [
           IconButton(
             icon: const Icon(Icons.delete, color: Colors.red),
-            onPressed: () {
-              Navigator.pop(context, "delete");
+            onPressed: () async {
+              await habitService.deleteHabit(widget.habit.id);
+              Navigator.pop(context, true);
             },
           )
         ],
@@ -153,17 +157,17 @@ class _EditHabitPageState extends State<EditHabitPage> {
                         BorderRadius.circular(30),
                   ),
                 ),
-                onPressed: () {
-                  Navigator.pop(
-                    context,
-                    Habit(
-                      title: titleController.text,
-                      description: descController.text,
-                      category: selectedCategory,
-                      isCompleted:
-                          widget.habit.isCompleted,
-                    ),
+                onPressed: () async {
+                  await habitService.updateHabit(
+                    widget.habit.id,
+                    {
+                      'title': titleController.text,
+                      'description': descController.text,
+                      'category': selectedCategory,
+                    },
                   );
+
+                  Navigator.pop(context, true);
                 },
                 child: const Text(
                   "Update Habit",
